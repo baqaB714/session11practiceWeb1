@@ -1,7 +1,19 @@
+@font-face {
+    font-family: Yekan;
+    src: url('/assets/fontYekan/yekan-font/Yekan.eot');
+    src: url('/assets/fontYekan/yekan-font/yekan-regular.eot') format('Yekan-opentype'),
+         url('/assets/fontYekan/yekan-font/Yekan.woff') format('woff'),
+         url('/assets/fontYekan/yekan-font/Yekan.ttf') format('truetype');
+    /* font-weight: normal;
+    font-style: normal; */
+  }
+
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Yekan;
 }
 
 section {
@@ -21,6 +33,7 @@ section div {
 section div>img {
     margin-left: 10px;
     transition: 2000ms;
+    cursor: pointer;
 }
 
 section div:first-child img {
@@ -44,22 +57,40 @@ section div img:hover {
 }
 
 section ~ article{
+    margin-top: 10px;
     width: 80%;
-    border: 4px black ridge;
+    border-top: 5px black ridge;
     padding: 10px;
     box-shadow: 0 0 10px green;
 }
 article p {
     text-align: justify;
 }
+article h5 {
+    text-align: justify;
+    direction: rtl;
+    font-style: italic;
+    font-weight: 900;
+    font-display: auto; /* swap , fallback , ...نمایش قبل از لود صفحه*/
+}
 article p span{
     font-size: 20px;
     font-family:  sans-serif;
     font-stretch: semi-expanded;
     color: brown;
+    text-transform : uppercase ;
 }
 
 p::first-line {
     font-weight: bold;
     text-align: justify;
+}
+
+.background-image {
+    width: 100px;
+    height: 100px;
+    background-image: url('/assets/images/wallpaper\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
 }
