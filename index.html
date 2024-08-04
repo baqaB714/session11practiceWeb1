@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+</head>
+<body>
+
+    <style>
+        section div{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            text-align: center;
+            overflow: hidden !important;
+            
+        }
+        section div img{
+            width: 100%;
+            transition: 2000ms;
+        }
+        section div img:hover{
+            width: 120%;
+        }
+    </style>
+    <img src="/assets/images/wallpaper (3).jpg" usemap="#imagemap" alt="Sample Image">
+
+    <map name="imagemap">
+        <area shape="rect" coords="34,44,270,350" href="/assets/images/wallpaper (2).jpg" alt="Link 1">
+        <area shape="circle" coords="160,210,80" href="/assets/images/wallpaper (3).jpg" alt="Link 2">
+        <area shape="poly" coords="130,190,190,290,290,250,270,170" href="/assets/images/wallpaper (4).jpg" alt="Link 3">
+    </map>
+
+    <section>
+        <div><img src="/assets/images/wallpaper (3).jpg" alt=""></div>
+        <div><img src="/assets/images/wallpaper (3).jpg" alt=""></div>
+        <div><img src="/assets/images/wallpaper (3).jpg" alt=""></div>
+    </section>
+</body>
+</html>
