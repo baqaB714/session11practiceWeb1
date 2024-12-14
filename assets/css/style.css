@@ -4,8 +4,14 @@
     src: url('/assets/fontYekan/yekan-font/yekan-regular.eot') format('Yekan-opentype'),
          url('/assets/fontYekan/yekan-font/Yekan.woff') format('woff'),
          url('/assets/fontYekan/yekan-font/Yekan.ttf') format('truetype');
-    /* font-weight: normal;
-    font-style: normal; */
+         
+  }
+@font-face {
+    font-family: Tanha;
+    src: url('/assets/fontYekan/tanha-font-v0.9/Tanha.eot');
+    src: url('/assets/fontYekan/tanha-font-v0.9/Tanha.eot') format('Tanha-opentype'),
+         url('/assets/fontYekan/tanha-font-v0.9/Tanha.woff') format('woff'),
+         url('/assets/fontYekan/tanha-font-v0.9/Tanha.ttf') format('truetype');
   }
 
 
